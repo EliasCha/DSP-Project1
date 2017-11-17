@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5681,        179]
+NotebookOptionsPosition[      4108,        134]
+NotebookOutlinePosition[      4461,        150]
+CellTagsIndexPosition[      4418,        147]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Signal Processing - Project 1", "Title",
+ CellChangeTimes->{{3.719892002995119*^9, 
+  3.719892009713935*^9}},ExpressionUUID->"c61c002b-d72a-4ddf-b18f-\
+4f1fcec7ee56"],
+
+Cell["\<\
+William Lewin & Elias Chahine
+wlewin@kth.se  echahine@kth.se\
+\>", "Subtitle",
+ CellChangeTimes->{{3.719892027466688*^9, 
+  3.719892047265497*^9}},ExpressionUUID->"50afabda-8499-44eb-b636-\
+4d185e202966"],
+
+Cell[CellGroupData[{
+
+Cell["Part 1", "Section",
+ CellChangeTimes->{{3.719892062954335*^9, 
+  3.7198920645211363`*^9}},ExpressionUUID->"ac786575-85c1-4a0a-a983-\
+9c9b12c5c1a2"],
+
+Cell[CellGroupData[{
+
+Cell["Assignment", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 
+  3.7198931581801643`*^9}},ExpressionUUID->"57e5fe08-984f-4597-bd3e-\
+41aa8ab22691"],
+
+Cell[TextData[{
+ "A mobile station is moving along a straight line, away from a basestation \
+at position ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "6ed37a88-e4fb-4178-97b2-3032055b875d"],
+ ". The basestation antenna is at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"30", 
+    StyleBox["m",
+     FontSlant->"Plain"]}], TraditionalForm]],ExpressionUUID->
+  "08b4ed30-73db-4c02-8b93-7699904c3186"],
+ " above the ground and the mobile antenna is at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1.5", " ", 
+    StyleBox["m",
+     FontSlant->"Plain"]}], TraditionalForm]],ExpressionUUID->
+  "7fe500ae-9d8e-4ff6-978d-5abab229582b"],
+ ". As seen by the picture the mobile is receiving two signals one direct ray \
+and one reflected. Assume that the reflection is perfect which means no power \
+loss at the reflection, but a phase shift of ",
+ Cell[BoxData[
+  FormBox["\[Pi]", TraditionalForm]],ExpressionUUID->
+  "7093ad8f-6efe-4ce0-b759-55c6a88f6f40"],
+ "."
+}], "Text",ExpressionUUID->"31d2fc90-fcb2-49e9-ba49-22e36ec1749b"],
+
+Cell[TextData[{
+ "Plot the squared amplitude (power) of the received signal when the mobile \
+is moving from position ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "a9431f7d-7f5a-4a03-a7cc-74368e5dded2"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", 
+    RowBox[{"2", "km"}]}], TraditionalForm]],ExpressionUUID->
+  "06c3719f-5bea-431b-8acb-19c298f110ac"],
+ ". Experiment with different types of graphs (e.g. log-scale, dB etc) to get \
+a nice picture."
+}], "Text",ExpressionUUID->"5f92b2db-eb45-45c7-9b24-110cb7cf83c9"]
+}, Open  ]],
+
+Cell["Discussion", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 
+  3.7198931740773067`*^9}},ExpressionUUID->"039eacde-b4e5-463b-8587-\
+c465ec2b8715"],
+
+Cell["Code", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 
+  3.719893177067865*^9}},ExpressionUUID->"22fda4ba-e0be-4dd8-904b-\
+c24c784a6c98"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 2", "Section",
+ CellChangeTimes->{{3.719892071488009*^9, 
+  3.719892073503118*^9}},ExpressionUUID->"05b11b5f-7b01-487e-a411-\
+9ae7605939e9"],
+
+Cell["Assignment", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 
+  3.7198931581801643`*^9}},ExpressionUUID->"535551b5-ddfb-4440-9859-\
+9150bc60f43e"],
+
+Cell["Discussion\t", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 3.7198931581801643`*^9}, {
+  3.719893189461738*^9, 
+  3.719893194627104*^9}},ExpressionUUID->"63fe5289-fc6a-4b25-9947-\
+4e0ba3b1ad95"],
+
+Cell["Code", "Subsection",
+ CellChangeTimes->{{3.719893143271935*^9, 3.7198931581801643`*^9}, {
+  3.719893196467677*^9, 
+  3.719893196803916*^9}},ExpressionUUID->"4e3d921f-dfd9-45ae-bd83-\
+26838d951268"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{617, 651},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 172, 3, 92, "Title", "ExpressionUUID" -> \
+"2d26223d-af61-4d3e-a098-5177082ea0fc"],
+Cell[755, 27, 214, 6, 81, "Subtitle", "ExpressionUUID" -> \
+"f5481026-304b-41cb-8cdc-8be738c7dfa9"],
+Cell[CellGroupData[{
+Cell[994, 37, 153, 3, 64, "Section", "ExpressionUUID" -> \
+"a4428f53-06b2-4a61-b64d-79996e1bdc4f"],
+Cell[CellGroupData[{
+Cell[1172, 44, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
+"a34e06f3-d11e-4b07-bff3-eaf3e0235a12"],
+Cell[1335, 49, 1063, 28, 109, "Text", "ExpressionUUID" -> \
+"ef8c607f-b2a8-4fe5-bb45-ea08d717e22f"],
+Cell[2401, 79, 578, 15, 69, "Text", "ExpressionUUID" -> \
+"54882920-75e8-474b-a427-b25d183da2b3"]
+}, Open  ]],
+Cell[2994, 97, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
+"33793613-bd8e-4cca-a0da-0ee98e479e3a"],
+Cell[3157, 102, 152, 3, 36, "Subsection", "ExpressionUUID" -> \
+"690f5d0c-39cc-41db-b70d-2a42d18a7675"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3346, 110, 151, 3, 64, "Section", "ExpressionUUID" -> \
+"2188153b-f621-4582-8ffd-da003effb7a9"],
+Cell[3500, 115, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
+"1f15e4bb-7354-4e88-bdb8-7a5cfccea48a"],
+Cell[3663, 120, 211, 4, 36, "Subsection", "ExpressionUUID" -> \
+"ce7bf7f7-57f0-4f10-bce6-5abc5d4d00f2"],
+Cell[3877, 126, 203, 4, 36, "Subsection", "ExpressionUUID" -> \
+"ae48d257-d555-4be6-8982-4ad165cd9887"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
