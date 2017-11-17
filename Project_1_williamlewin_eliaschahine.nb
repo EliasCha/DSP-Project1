@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5681,        179]
-NotebookOptionsPosition[      4108,        134]
-NotebookOutlinePosition[      4461,        150]
-CellTagsIndexPosition[      4418,        147]
+NotebookDataLength[      6706,        206]
+NotebookOptionsPosition[      4998,        157]
+NotebookOutlinePosition[      5351,        173]
+CellTagsIndexPosition[      5308,        170]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,8 +37,8 @@ Cell[CellGroupData[{
 
 Cell["Part 1", "Section",
  CellChangeTimes->{{3.719892062954335*^9, 
-  3.7198920645211363`*^9}},ExpressionUUID->"ac786575-85c1-4a0a-a983-\
-9c9b12c5c1a2"],
+  3.7198920645211363`*^9}},ExpressionUUID->"a4428f53-06b2-4a61-b64d-\
+79996e1bdc4f"],
 
 Cell[CellGroupData[{
 
@@ -95,15 +95,38 @@ a nice picture."
 }], "Text",ExpressionUUID->"5f92b2db-eb45-45c7-9b24-110cb7cf83c9"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell["Discussion", "Subsection",
  CellChangeTimes->{{3.719893143271935*^9, 
   3.7198931740773067`*^9}},ExpressionUUID->"039eacde-b4e5-463b-8587-\
 c465ec2b8715"],
 
+Cell["\<\
+The problem at hand is to examine the effect of line-of-sight propagation of \
+wireless signals.
+
+When the car travels from 0 to 2000m away from the antenna, both the \
+reflected and the direct signal changes. 
+
+The recieved signal can be interpereted as the sum of both the reflected and \
+the direct signal.
+\
+\>", "Text",
+ CellChangeTimes->{{3.719909599878409*^9, 3.719909609739849*^9}, {
+  3.719909899235939*^9, 3.719909919944202*^9}, {3.719909965072262*^9, 
+  3.7199099744965897`*^9}, {3.7199100903263903`*^9, 3.719910092514949*^9}, {
+  3.7199103171535807`*^9, 3.719910340784946*^9}, {3.7199104047090883`*^9, 
+  3.719910407966914*^9}, {3.719910483275173*^9, 3.719910502117456*^9}, {
+  3.719910571943592*^9, 3.719910578792461*^9}, {3.719910638022147*^9, 
+  3.7199106583464108`*^9}},ExpressionUUID->"961d7771-bdc3-423d-b7f6-\
+87e47c23ecf6"]
+}, Open  ]],
+
 Cell["Code", "Subsection",
  CellChangeTimes->{{3.719893143271935*^9, 
-  3.719893177067865*^9}},ExpressionUUID->"22fda4ba-e0be-4dd8-904b-\
-c24c784a6c98"]
+  3.719893177067865*^9}},ExpressionUUID->"690f5d0c-39cc-41db-b70d-\
+2a42d18a7675"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -132,8 +155,8 @@ Cell["Code", "Subsection",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{617, 651},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
+WindowSize->{560, 747},
+WindowMargins->{{4, Automatic}, {0, Automatic}},
 FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
 2017)",
 StyleDefinitions->"Default.nb"
@@ -150,35 +173,39 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 172, 3, 92, "Title", "ExpressionUUID" -> \
-"2d26223d-af61-4d3e-a098-5177082ea0fc"],
+Cell[580, 22, 172, 3, 148, "Title", "ExpressionUUID" -> \
+"cb600bfd-1798-43c7-8557-a031f0929bee"],
 Cell[755, 27, 214, 6, 81, "Subtitle", "ExpressionUUID" -> \
-"f5481026-304b-41cb-8cdc-8be738c7dfa9"],
+"9dcbe6c3-866e-4c7c-a282-f064d67ae8fc"],
 Cell[CellGroupData[{
 Cell[994, 37, 153, 3, 64, "Section", "ExpressionUUID" -> \
-"a4428f53-06b2-4a61-b64d-79996e1bdc4f"],
+"52cb09a1-61ce-40eb-bf62-bfa1fcc63149"],
 Cell[CellGroupData[{
 Cell[1172, 44, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
-"a34e06f3-d11e-4b07-bff3-eaf3e0235a12"],
-Cell[1335, 49, 1063, 28, 109, "Text", "ExpressionUUID" -> \
-"ef8c607f-b2a8-4fe5-bb45-ea08d717e22f"],
+"f18d5ec5-f4e7-4cbf-a66a-91dc66d23a66"],
+Cell[1335, 49, 1063, 28, 128, "Text", "ExpressionUUID" -> \
+"3c396b8b-7a5e-4c34-91fc-b89a918ae7b4"],
 Cell[2401, 79, 578, 15, 69, "Text", "ExpressionUUID" -> \
-"54882920-75e8-474b-a427-b25d183da2b3"]
-}, Open  ]],
-Cell[2994, 97, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
-"33793613-bd8e-4cca-a0da-0ee98e479e3a"],
-Cell[3157, 102, 152, 3, 36, "Subsection", "ExpressionUUID" -> \
-"690f5d0c-39cc-41db-b70d-2a42d18a7675"]
+"34da3de5-e666-482f-96fa-6bfff9772be7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3346, 110, 151, 3, 64, "Section", "ExpressionUUID" -> \
-"2188153b-f621-4582-8ffd-da003effb7a9"],
-Cell[3500, 115, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
-"1f15e4bb-7354-4e88-bdb8-7a5cfccea48a"],
-Cell[3663, 120, 211, 4, 36, "Subsection", "ExpressionUUID" -> \
-"ce7bf7f7-57f0-4f10-bce6-5abc5d4d00f2"],
-Cell[3877, 126, 203, 4, 36, "Subsection", "ExpressionUUID" -> \
-"ae48d257-d555-4be6-8982-4ad165cd9887"]
+Cell[3016, 99, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
+"45e59590-fe0e-4bbb-91f3-747fb8f9b03d"],
+Cell[3179, 104, 853, 18, 182, "Text", "ExpressionUUID" -> \
+"ed051746-43a0-45e5-93f8-e1aa8a58c26c"]
+}, Open  ]],
+Cell[4047, 125, 152, 3, 44, "Subsection", "ExpressionUUID" -> \
+"311d7144-1aab-4fb9-990b-05b77999db57"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4236, 133, 151, 3, 64, "Section", "ExpressionUUID" -> \
+"3275c61e-c987-4863-8257-95a2c80107d0"],
+Cell[4390, 138, 160, 3, 44, "Subsection", "ExpressionUUID" -> \
+"c3f73c21-46dc-4cf0-9dda-c3858791b72f"],
+Cell[4553, 143, 211, 4, 36, "Subsection", "ExpressionUUID" -> \
+"ed04b9fd-5935-4176-9140-7a88107a040a"],
+Cell[4767, 149, 203, 4, 36, "Subsection", "ExpressionUUID" -> \
+"01eee3ba-e998-448b-a36a-7db41ac8a816"]
 }, Open  ]]
 }, Open  ]]
 }
